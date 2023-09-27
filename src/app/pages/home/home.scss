@@ -1,0 +1,155 @@
+.homePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    .userDetail {
+        width: calc(100% - 80px);
+        padding: 30px 40px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin: 0px;
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 3px;
+        }
+
+        .toolTipUser {
+            display: flex;
+            align-items: center;
+
+            .tools {
+                margin-right: 15px;
+            }
+
+            .profilePic {
+                position: relative;
+                margin-right: 15px;
+
+                img {
+                    border-radius: 100px;
+                    object-fit: cover;
+                }
+
+                .onlineStatus {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background-color: lightgreen;
+                    border: 2px solid white;
+                    bottom: 5px;
+                    right: 0px;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+
+    .chatBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 40px 40px;
+
+        max-width: 1030px;
+        width: 100%;
+
+        .content {
+            width: 100%;
+
+            .welComeChatGPT {
+                text-align: center;
+
+                img {
+                    object-fit: cover;
+                    margin-bottom: 20px;
+                }
+
+                h2 {
+                    color: white;
+                    font-size: 32px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .tips {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 50px;
+
+                .tipBox {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: calc(33% - 40px);
+                    color: white;
+
+                    img {
+                        margin-bottom: 20px;
+                    }
+
+                    .tipHead {
+                        font-size: 18px;
+                    }
+
+                    .tipExample {
+                        background-color: #323232;
+                        color: white;
+                        font-size: 16px;
+                        padding: 16px 15px;
+                        margin: 10px 0px;
+                        border: 1px solid rgba(255, 255, 255, 0.2392156863);
+                        border-radius: 10px;
+
+                    }
+                }
+            }
+
+            .inputDiv {
+                background: rgba(53, 75, 124, 0.438);
+                background: linear-gradient(36deg, rgba(53, 76, 124, 0.438) 38%, rgba(77, 39, 108, 0.438) 66%);
+                padding: 10px 30px;
+                margin-top: 40px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                input{
+                    width: calc(100% - 20px - 35px);
+                    background-color: transparent;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    
+                }
+                button{
+                    background: rgb(150,45,186);
+background: linear-gradient(39deg, rgba(150,45,186,1) 38%, rgba(214,83,114,1) 66%);
+
+display: flex;
+align-items: center;
+justify-content: center;
+width: 35px;
+aspect-ratio: 1;
+border-radius: 12px;
+border: none;
+
+                }
+            }
+        }
+    }
+}

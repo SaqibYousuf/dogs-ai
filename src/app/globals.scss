@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Poppins;
+  src: url('./../Assets/font/Poppins-Medium.ttf');
+}
+body{
+  margin: 0px;
+}
+*{
+  font-family: Poppins;
+  margin: 0px;
+}
+.LayOut{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .sidebar{
+    background-color: #0c0c0c;
+    width: 260px;
+    height: 100vh;
+  }
+  .body{
+    width: calc(100% - 260px);
+    height: 100vh;
+    background: rgb(21,26,39);
+background: linear-gradient(201deg, rgba(21,26,39,1) 38%, rgba(31,18,34,1) 66%);
+overflow-y: auto;
+overflow-x: hidden;
+  }
+}
